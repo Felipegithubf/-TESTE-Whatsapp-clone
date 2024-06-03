@@ -1,10 +1,19 @@
-import React from 'react';
 import './App.css';
 import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 import ChatIcon from '@mui/icons-material/Chat';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SearchIcon from '@mui/icons-material/Search';
+import { useState } from 'react';
 export default () => {
+
+
+ const [chatlist , setChaList] = useState([{}, {} , {} , {}])
+
+  
+
+
+
+
   return (
     <div className='app-window'>
       <div className='sidebar'>
@@ -32,10 +41,13 @@ export default () => {
            <input type="search" placeholder="Procurar ou começar uma nova conversa" />
           </div>
         </div>
-
         <div className='chatlist'>
+  {chatlist.map((chatItem, index) => (
+    <div key={index}>
       
-        </div>
+    </div>
+  ))}
+</div>
       </div>
 
       <div className="content-area">
