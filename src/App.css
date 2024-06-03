@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(210, 248, 195);
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.app-window {
+  display: flex;
+  height: 100vh;
+  background-color: aliceblue;
+}
+
+.sidebar {
+  width: 35%;
+  max-width: 415px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #DDD;
+}
+
+header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.header--avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+.header--btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search {
+ background-color: #F6F6F6;
+ border-bottom: 1px solid #EEE;
+ padding: 5px 15px;
+
+
+
+}
+
+
+
+.search--input{
+  background-color: #FFF;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+
+
+}
+
+.search--input input{
+
+flex: 1;
+border: 0;
+outline: 0;
+background-color: transparent;
+margin-left: 10px;
+
+
+
+}
+
+
+
+
+
+.header--button {
+  margin-right: 10px;
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contentarea {
+
+
+
+
+}
