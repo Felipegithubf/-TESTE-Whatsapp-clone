@@ -93,21 +93,17 @@ margin-left: 10px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.contentarea {
-
-
-
-
+.chatlist{
+  flex: 1;
+  background-color: #FFF;
+  overflow-y: auto;
 }
+
+
+
+
+
+
+
+
+
