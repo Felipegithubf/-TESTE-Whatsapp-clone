@@ -5,10 +5,12 @@ import ChatIcon from '@mui/icons-material/Chat';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SearchIcon from '@mui/icons-material/Search';
 import { useState } from 'react';
+import ChatIntro from './components/Chatintro';
+import ChatWindow from './components/ChatWindow';
 
 export default () => {
   const [chatlist, setChatList] = useState([{}, {}, {}, {}, {} , {} , {} , {} , {} , {} , {} , {}]);
-
+  const [activeChat , setActiveChat] = useState({});
   return (
     <div className='app-window'>
       <div className='sidebar'>
@@ -35,12 +37,27 @@ export default () => {
         </div>
         <div className='chatlist'>
           {chatlist.map((item, key) => (
-            <ChatListItem key={key} />
+            <ChatListItem key={key} 
+                    onClick={() => setActiveChat(chatlist) }
+
+                    />
+
           ))}
         </div>
       </div>
 
       <div className="content-area">
+     
+        {activeChat.chatId !== undefined &&
+           <ChatWindow />
+        }
+
+        {activeChat.chatId === undefined &&
+          <ChatIntro />
+        }
+       
+        
+    
 
       </div>
     </div>
